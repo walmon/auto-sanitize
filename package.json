@@ -1,6 +1,6 @@
 {
   "name": "auto-sanitize",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Implementation of google-caja to unify sanitize",
   "main": "index.js",
   "scripts": {
