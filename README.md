@@ -8,8 +8,10 @@ Implementation of google-caja, helps to sanitize objects by a single call of a f
 
 ## Usage
 
-	var sanitizer = require('auto-sanitize'),
-    	sanitizeObject = sanitizer.sanitizeObject;
+	// 'util' is just for you to see the contents of
+	// the objects, we don't actually need it to work
+	var util = require('util'),
+	sanitizer = require('auto-sanitize').sanitizeObject;
 
 	var dont_trust_object = 
 		[{ 
@@ -31,7 +33,11 @@ Implementation of google-caja, helps to sanitize objects by a single call of a f
           name:'<script>alert("alert")</script>Costa', 
           lastname:'Rica'
         }];
-    console.log('should not trust in this: ' + dont_trust_object+' should trust in this: ' +  sanitized_object);
+    console.log('--should not trust in this: \n' + util.inspect(dont_trust_object, false, null));
+
+    var sanitized_object = sanitizer(dont_trust_object);
+
+    console.log('--should trust in this: \n' + util.inspect( sanitized_object,false, null));
 
  ## Tests
 
