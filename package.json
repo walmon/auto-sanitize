@@ -1,0 +1,38 @@
+{
+  "name": "auto-sanitize",
+  "version": "0.1.0",
+  "description": "Implementation of google-caja to unify sanitize",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/walmon/auto-sanitize.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/brentertz/scapegoat/blob/master/LICENSE-MIT"
+    }
+  ], 
+  "keywords": [
+    "google-caja",
+    "iterate",
+    "object",
+    "sanitize",
+    "object"
+  ],
+  "author": "Walter Montes <walmon93@hotmail.com> (http://waltermontes.wordpress.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walmon/auto-sanitize/issues"
+  },
+  "devDependencies": {
+    "chai": "^2.0.0",
+    "mocha": "^2.1.0"
+  },
+  "dependencies": {
+    "google-caja": "0.0.2"
+  }
+}
