@@ -40,4 +40,4 @@ Implementation of google-caja, helps to sanitize objects by a single call of a f
 
  ## Release History
 
-* 0.1.0 Initial release
+* 0.1.2 Initial release
